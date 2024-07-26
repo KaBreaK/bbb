@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(512px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin-top: 100%;
+}
+.square {
+    display: flex;
+    background-image: url(img1.png);
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.square:hover {
+    background-color: #f0f0f0;
+}
